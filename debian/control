@@ -16,6 +16,7 @@ Testsuite: autopkgtest-pkg-go
 Package: golang-github-ajg-form-dev
 Architecture: all
 Depends: ${misc:Depends}
+Multi-Arch: foreign
 Description: Form Encoding & Decoding Package for Go
  This library is designed to allow seamless, high-fidelity encoding and
  decoding of arbitrary data in application/x-www-form-urlencoded format
