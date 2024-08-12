@@ -2,6 +2,8 @@ From: Anshul Singh <anshul.singh@canonical.com>
 Date: Mon, 12 Aug 2024 11:25:43 +0530
 Subject: Change semicolons to ampersands to enable building with go 1.17 (LP:
  #1942131)
+Bug-Ubuntu: https://bugs.launchpad.net/ubuntu/+source/golang-github-ajg-form/+bug/1942131
+Forwarded: https://github.com/ajg/form/pull/26
 
 ---
  form_test.go | 2 +-
