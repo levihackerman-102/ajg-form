@@ -2,6 +2,15 @@ From: Anshul Singh <anshul.singh@canonical.com>
 Date: Mon, 12 Aug 2024 11:25:43 +0530
 Subject: Change semicolons to ampersands to enable building with go 1.17 (LP:
  #1942131)
+Description: Change ';' to '&' when used as a separator
+As of Go 1.17, ';' is no longer a valid separator in the net/url
+and net/http packages. This causes some of the test cases in this
+package to fail. Since '&' is still valid, we change the test cases
+to use '&' as a separator instead.
+See https://golang.org/doc/go1.17#semicolons for more information
+Author: William 'jawn-smith' Wilson
+Bug-Ubuntu: https://bugs.launchpad.net/ubuntu/+source/golang-github-ajg-form/+bug/1942131
+Forwarded: https://github.com/ajg/form/pull/26
 
 ---
  form_test.go | 2 +-
